@@ -1,0 +1,4 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>Deploy SDF Project</projectname>
+  <frameworkversion>1.0</frameworkversion>
+</manifest>

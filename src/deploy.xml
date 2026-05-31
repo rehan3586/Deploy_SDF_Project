@@ -3,10 +3,10 @@
         <path>~/AccountConfiguration/*</path>
     </configuration>
     <files>
-        <path>~/FileCabinet/*</path>
+        <path>~/FileCabinet/SuiteScripts/testScript/HC_SC_TestDeployScript.js</path>
     </files>
     <objects>
-        <path>~/Objects/*</path>
+        <path>~/Objects/testScript/customscript_test_deployscript.xml</path>
     </objects>
     <translationimports>
         <path>~/Translations/*</path>

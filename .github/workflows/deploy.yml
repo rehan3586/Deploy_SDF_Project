@@ -31,7 +31,7 @@ jobs:
 
       - name: Setup NetSuite Authentication
         run: |
-          echo "$NETSUITE_PRIVATE_KEY" > private.pem
+          echo "$SSH_PRIVATE_KEY" > private.pem
           npx suitecloud account:setup:ci \
             --authid "$NETSUITE_AUTH_ID" \
             --account "$NETSUITE_ACCOUNT_ID" \
@@ -41,7 +41,7 @@ jobs:
           NETSUITE_AUTH_ID: ${{ secrets.NETSUITE_AUTH_ID }}
           NETSUITE_ACCOUNT_ID: ${{ secrets.NETSUITE_ACCOUNT_ID }}
           NETSUITE_CERTIFICATE_ID: ${{ secrets.NETSUITE_CERTIFICATE_ID }}
-          NETSUITE_PRIVATE_KEY: ${{ secrets.NETSUITE_PRIVATE_KEY }}
+          NETSUITE_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SDF_PASSPHRASE: ${{ secrets.SDF_PASSPHRASE }}
 
       - name: Validate SDF Project
